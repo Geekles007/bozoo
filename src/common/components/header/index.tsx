@@ -5,10 +5,11 @@ import {IHeader} from "../../models/IHeader";
 import dynamic from "next/dynamic";
 import {useTheme} from "next-themes";
 import {useTranslation} from "react-i18next";
-import {BiWallet} from "react-icons/bi";
+import WalletButton from "../wallet-button";
 
 const ThemeSwitcher = dynamic(() => import("../theme-switcher"), {ssr: false});
 const LangSwitcher = dynamic(() => import("../lang-switcher"), {ssr: false});
+const SearchInput = dynamic(() => import("../search-input"), {ssr: false});
 
 type HeaderUIProps = {}
 
@@ -29,11 +30,14 @@ const HeaderUI = ({}: HeaderUIProps) => {
     ];
 
     return <div className={"_header"}>
-        <Link href={"/"}>
-            <a>
-                <Image src={theme === "dark" ? "/logo-white.svg" : "/logo.svg"} height={60} width={100}/>
-            </a>
-        </Link>
+        <div className={"_left"}>
+            <Link href={"/"} className={"_logo"}>
+                <a>
+                    <Image src={theme === "dark" ? "/logo-white.svg" : "/logo.svg"} height={60} width={100}/>
+                </a>
+            </Link>
+            <SearchInput />
+        </div>
 
         <div className="_right">
             {
@@ -47,9 +51,7 @@ const HeaderUI = ({}: HeaderUIProps) => {
             }
             <ThemeSwitcher/>
             <LangSwitcher />
-            <button className={"wallet-button"}>
-                <BiWallet size={22}/>
-            </button>
+            <WalletButton />
         </div>
     </div>
 

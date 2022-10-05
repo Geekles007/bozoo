@@ -1,0 +1,28 @@
+.search--input {
+  @apply p-2 bg-hover w-[24rem] rounded-md flex items-center justify-between overflow-hidden relative;
+
+  &::before {
+    content: "";
+    @apply border border-gray-700 absolute inset-0 pointer-events-none rounded-md opacity-0 transition-all duration-300;
+  }
+
+  &:hover {
+    &:before {
+      @apply opacity-100;
+    }
+  }
+
+  input {
+    @apply bg-transparent outline-none flex-1 text-sm
+  }
+
+  input:focus & {
+    &:before {
+      @apply opacity-100;
+    }
+  }
+
+  ._icon {
+    @apply bg-gray-600 rounded-md p-1 px-2.5 text-xs;
+  }
+}

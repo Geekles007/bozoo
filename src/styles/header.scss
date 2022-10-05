@@ -1,11 +1,19 @@
 ._header {
-  @apply h-20 dark:bg-black flex items-center px-5 justify-between;
+  @apply h-20 dark:bg-black flex items-center px-5 justify-between backdrop-blur-sm;
+
+  ._left {
+    @apply flex items-center gap-4;
+
+    ._logo {
+      @apply flex items-center;
+    }
+  }
 
   ._right {
     @apply flex items-center gap-1;
 
     a {
-      @apply px-4 py-3 hover:text-white hover:bg-hover transition-all duration-500 relative rounded;
+      @apply px-3 py-2 hover:text-white hover:bg-hover transition-all duration-500 relative rounded;
 
       ._active {
         @apply bg-hover;
@@ -13,7 +21,7 @@
     }
 
     .theme--switcher {
-      @apply py-4;
+      @apply py-3;
     }
 
     .lang--switcher {
@@ -21,7 +29,7 @@
     }
 
     .wallet-button {
-      @apply bg-primary rounded-full p-3;
+      @apply bg-primary rounded-full p-2 text-white;
     }
   }
 }

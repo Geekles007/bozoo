@@ -9,7 +9,7 @@ const LangSwitcher = ({}: LangSwitcherProps) => {
 
     useEffect(() => {
         i18n.changeLanguage(lang ?? i18n.language).then(r => {
-            console.log("lang changed", r);
+            // console.log("lang changed", r);
         });
     }, [lang]);
 
