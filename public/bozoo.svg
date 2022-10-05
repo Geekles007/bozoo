@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 448 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1094.85,-445)">
+        <g id="Plan-de-travail4" serif:id="Plan de travail4" transform="matrix(0.933831,0,0,1,86.8562,-0.4)">
+            <rect x="1079.41" y="445.4" width="478.976" height="150.638" style="fill:none;"/>
+            <g transform="matrix(1.07086,0,0,1,684.897,20.7191)">
+                <g>
+                    <g transform="matrix(1,0,0,1,197.988,-87.9764)">
+                        <text x="164.941px" y="640.476px" style="font-family:'Gilroy-ExtraBold', 'Gilroy';font-weight:800;font-size:150px;fill:white;">BO<tspan x="368.641px " y="640.476px ">Z</tspan></text>
+                        <text x="445.891px" y="640.476px" style="font-family:'Gilroy-ExtraBold', 'Gilroy';font-weight:800;font-size:150px;fill:rgb(233,77,83);">O</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-80.3832,-116.724)">
+                        <text x="778.862px" y="669.224px" style="font-family:'Gilroy-ExtraBold', 'Gilroy';font-weight:800;font-size:150px;fill:white;">O</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+._header {
+  @apply h-20 dark:bg-black flex items-center px-5 justify-between;
+
+  ._right {
+    @apply flex items-center gap-1;
+
+    a {
+      @apply px-4 py-3 hover:text-white hover:bg-hover transition-all duration-500 relative rounded;
+
+      ._active {
+        @apply bg-hover;
+      }
+    }
+
+    .theme--switcher {
+      @apply py-4;
+    }
+
+    .lang--switcher {
+      @apply flex items-center gap-1 font-normal uppercase
+    }
+
+    .wallet-button {
+      @apply bg-primary rounded-full p-3;
+    }
+  }
+}
