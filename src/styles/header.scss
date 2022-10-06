@@ -1,5 +1,5 @@
 ._header {
-  @apply h-20 dark:bg-black flex items-center px-5 justify-between backdrop-blur-sm;
+  @apply h-20 dark:bg-black flex items-center px-5 justify-between backdrop-blur-sm sticky top-0;
 
   ._left {
     @apply flex items-center gap-4;

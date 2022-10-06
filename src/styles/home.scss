@@ -1,0 +1,56 @@
+.main--banner {
+  @apply mx-5 mb-12 bg-hover rounded-md flex place-items-center;
+  height: calc(100vh - 194px);
+
+  ._content {
+    max-width: 1440px;
+    @apply w-4/5 p-8 mx-auto flex items-center justify-between;
+
+    ._left {
+      @apply flex flex-col items-start w-2/4;
+
+      ._infos {
+        @apply flex gap-6 items-center text-sm mb-4;
+      }
+
+      h2 {
+        @apply text-9xl font-medium mb-4;
+      }
+
+      ._badges {
+        @apply flex gap-6 items-center mb-8;
+
+        ._separator {
+          @apply h-14 w-0.5 bg-black;
+        }
+      }
+
+      ._actions {
+        @apply flex items-center gap-6;
+      }
+    }
+
+    ._right {
+      ._slide {
+        @apply overflow-hidden rounded-md w-[480px] h-[480px] relative;
+
+        img {
+          @apply object-center object-cover;
+        }
+
+        ._naming {
+          @apply flex items-center absolute bottom-0 bg-black left-0 right-0 p-3 gap-2;
+
+          span {
+            @apply text-sm;
+          }
+
+          .certificate--icon {
+            @apply text-primary;
+          }
+
+        }
+      }
+    }
+  }
+}

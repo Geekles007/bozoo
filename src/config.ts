@@ -10,8 +10,8 @@ const langs = ["en", "fr"];
         .use(LanguageDetector)
         .use(initReactI18next)
         .init({
-            fallbackLng: 'fr',
-            lng: 'fr',
+            fallbackLng: 'en',
+            lng: 'en',
             debug: false,
             ns: ["translation"],
             defaultNS: "translation",

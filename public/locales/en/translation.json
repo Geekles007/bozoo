@@ -6,5 +6,9 @@
   "helpPageLinkText": "Help",
   "brandPageLinkText": "Brand",
   "termOfServicePageLinkText": "Term of Service",
-  "businessPageLinkText": "Business"
+  "businessPageLinkText": "Business",
+  "soonDropText": "Soon drop",
+  "createdByText": "Created by",
+  "searchText": "Search",
+  "collectionText": "Collection"
 }

@@ -1,8 +1,8 @@
 import React, {memo} from "react";
 import dynamic from "next/dynamic";
 
-const HeaderUI = dynamic(() => import("../header"), {ssr: false});
-const FooterUI = dynamic(() => import("../footer"), {ssr: false});
+const HeaderUI = dynamic(() => import("../../common/components/header"), {ssr: false});
+const FooterUI = dynamic(() => import("../../common/components/footer"), {ssr: false});
 
 type LayoutProps = {
     children: JSX.Element;

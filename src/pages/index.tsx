@@ -1,5 +1,8 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import Head from 'next/head';
+import dynamic from "next/dynamic";
+
+const MainBanner = dynamic(() => import("../modules/main-banner"), {ssr: false});
 
 const Home: NextPage = () => {
   return (
@@ -7,11 +10,11 @@ const Home: NextPage = () => {
       <Head>
         <title>BOZOO</title>
         <meta name="description" content="Afro NFT's marketplace" />
-        <link rel="icon" href="/public/favicon.svg" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main>
-        Content
+        <MainBanner />
       </main>
     </>
   )
