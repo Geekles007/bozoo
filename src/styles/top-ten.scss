@@ -22,7 +22,7 @@
     }
 
     ._item {
-      @apply py-4 hover:bg-black flex items-center;
+      @apply py-4 hover:bg-black flex items-center cursor-pointer;
 
       .secondary--item {
         @apply text-white;
@@ -30,6 +30,10 @@
 
       .main--item {
         @apply px-2 flex items-center gap-2;
+
+        span {
+          @apply block w-6 text-white;
+        }
 
         .nft--image {
           @apply h-12 w-12 rounded-md overflow-hidden relative;
