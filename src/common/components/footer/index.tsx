@@ -51,7 +51,7 @@ const FooterUI = ({}: FooterUIProps) => {
                 <div className="_left">
                     {
                         links?.map((item, index) => {
-                            return <Link href={item?.route}>
+                            return <Link key={index} href={item?.route}>
                                 <a className={"footer--link"}>
                                     {t(item?.title)}
                                 </a>

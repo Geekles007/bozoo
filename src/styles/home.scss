@@ -4,7 +4,7 @@
 
   ._content {
     max-width: 1440px;
-    @apply w-4/5 p-8 mx-auto flex items-center justify-between;
+    @apply p-8 mx-auto flex items-center justify-around;
 
     ._left {
       @apply flex flex-col items-start w-2/4;

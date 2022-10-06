@@ -5,6 +5,7 @@ import {useTranslation} from "react-i18next";
 import Button from "../../common/components/button";
 import Image from "next/image";
 import {FaCertificate} from "react-icons/all";
+import Link from "next/link";
 
 type MainBannerProps = {}
 
@@ -23,7 +24,7 @@ const MainBanner = ({}: MainBannerProps) => {
                     <Badge
                         info={{
                             label: t("createdByText"),
-                            text: "@beingdesign"
+                            text: "@johndoedesign"
                         }}
                         image={"/avatar.jpeg"}/>
                     <div className="_separator" />
@@ -42,9 +43,11 @@ const MainBanner = ({}: MainBannerProps) => {
             <div className="_right">
                 <div className="_slide">
                     <Image layout={"fill"} src={"/nft.jpeg"}/>
-                    <div className="_naming">
-                        <span>Ajaverse</span> <FaCertificate className={"certificate--icon"} />
-                    </div>
+                    <Link href={"/"}>
+                        <a className="_naming">
+                            <span>John Doe NFT</span> <FaCertificate className={"certificate--icon"} />
+                        </a>
+                    </Link>
                 </div>
             </div>
         </div>
