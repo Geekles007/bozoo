@@ -1,0 +1,44 @@
+.top--ten {
+  width: 100%;
+  @apply mx-auto max-w-[1280px] flex flex-col items-center mb-12;
+
+  h3 {
+    @apply text-center text-4xl mb-12;
+  }
+
+  ._list {
+    @apply w-full;
+
+    ._head, ._item {
+      @apply flex text-sm text-gray-400 border-b border-b-hover pb-2;
+
+      .main--head, .main--item {
+        @apply w-80
+      }
+
+      .secondary--head, .secondary--item {
+        @apply flex-1;
+      }
+    }
+
+    ._item {
+      @apply py-4 hover:bg-black flex items-center;
+
+      .secondary--item {
+        @apply text-white;
+      }
+
+      .main--item {
+        @apply px-2 flex items-center gap-2;
+
+        .nft--image {
+          @apply h-12 w-12 rounded-md overflow-hidden relative;
+
+          img {
+            @apply object-center object-cover;
+          }
+        }
+      }
+    }
+  }
+}

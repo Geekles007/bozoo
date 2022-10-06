@@ -10,5 +10,8 @@
   "soonDropText": "Bientôt disponible",
   "createdByText": "Crée par",
   "searchText": "Rechercher",
-  "collectionText": "Collection"
+  "collectionText": "Collection",
+  "exploreText": "Explorer",
+  "topCollectionsToday": "Classement des collections aujourd'hui",
+  "viewNftText": "Voir NFTs"
 }

@@ -10,5 +10,8 @@
   "soonDropText": "Soon drop",
   "createdByText": "Created by",
   "searchText": "Search",
-  "collectionText": "Collection"
+  "collectionText": "Collection",
+  "exploreText": "Explore",
+  "topCollectionsToday": "Top Collections Today",
+  "viewNftText": "View NFTs"
 }

@@ -74,3 +74,23 @@ a {
     @apply px-6 py-3
   }
 }
+
+.certificate--icon {
+  @apply text-primary;
+}
+
+._numbers {
+  @apply flex flex-col;
+
+  ._top {
+    @apply flex items-center gap-1;
+
+    span {
+      @apply text-white
+    }
+  }
+
+  ._subtract {
+    @apply text-xs;
+  }
+}

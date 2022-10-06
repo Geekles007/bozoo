@@ -19,7 +19,7 @@ const MainBanner = ({}: MainBannerProps) => {
                     <Tag>{t("soonDropText")}</Tag>
                     <span>Jan 6, 2022</span>
                 </div>
-                <h2>Discover New NFT</h2>
+                <h2>Discover New NFTs</h2>
                 <div className="_badges">
                     <Badge
                         info={{
@@ -36,7 +36,7 @@ const MainBanner = ({}: MainBannerProps) => {
                         image={"/bozoo.png"}/>
                 </div>
                 <div className="_actions">
-                    <Button className={""} type={"large"}>Explore</Button>
+                    <Button className={""} type={"large"}>{t("exploreText")}</Button>
                     <Button className={"_bordered "} type={"large"}>View NFT</Button>
                 </div>
             </div>
