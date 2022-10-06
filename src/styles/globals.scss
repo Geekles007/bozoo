@@ -85,6 +85,10 @@ a {
   ._top {
     @apply flex items-center gap-1;
 
+    ._icon {
+      @apply text-gray-400;
+    }
+
     span {
       @apply text-white
     }
