@@ -17,9 +17,9 @@ const LangSwitcher = ({}: LangSwitcherProps) => {
         setLang(oldLang => oldLang === "fr" ? "en" : "fr");
     }, [setLang]);
 
-    return <a className={"lang--switcher"} onClick={handleLangChange}>
+    return <button className={"lang--switcher"} onClick={handleLangChange}>
         <IoEarthOutline size={22} /> <strong>{lang}</strong>
-    </a>
+    </button>
 
 }
 

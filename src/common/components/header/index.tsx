@@ -31,8 +31,8 @@ const HeaderUI = ({}: HeaderUIProps) => {
 
     return <div className={"_header"}>
         <div className={"_left"}>
-            <Link href={"/"} className={"_logo"}>
-                <a>
+            <Link href={"/"}>
+                <a className={"_logo"}>
                     <Image src={theme === "dark" ? "/logo-white.svg" : "/logo.svg"} height={60} width={100}/>
                 </a>
             </Link>

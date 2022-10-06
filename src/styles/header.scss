@@ -24,10 +24,6 @@
       @apply py-3;
     }
 
-    .lang--switcher {
-      @apply flex items-center gap-1 font-normal uppercase
-    }
-
     .wallet-button {
       @apply bg-primary rounded-full p-2 text-white;
     }

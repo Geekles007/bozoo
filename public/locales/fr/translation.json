@@ -1,4 +1,10 @@
 {
   "explorePageLinkText": "Explorer",
-  "collectionsPageLinkText": "Collections"
+  "collectionsPageLinkText": "Collections",
+  "aboutPageLinkText": "A propos",
+  "contactPageLinkText": "Contactez nous",
+  "helpPageLinkText": "Besoin d'aide",
+  "brandPageLinkText": "Marque",
+  "termOfServicePageLinkText": "Termes du service",
+  "businessPageLinkText": "Affaire"
 }
