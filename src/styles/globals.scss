@@ -30,11 +30,11 @@ a {
 }
 
 ._tag {
-  @apply text-sm p-3 bg-black rounded-xl;
+  @apply text-sm p-3 bg-gray-300 dark:bg-black rounded-xl;
 }
 
 ._badge {
-  @apply flex gap-3 sm:bg-transparent bg-black p-2 rounded-xl w-full;
+  @apply flex gap-3 dark:sm:bg-transparent dark:bg-black bg-gray-300 sm:bg-transparent p-2 rounded-xl w-full;
 
   &:hover {
     ._avatar {
@@ -54,20 +54,20 @@ a {
     @apply flex flex-col justify-center gap-1;
 
     span {
-      @apply text-xs text-gray-400
+      @apply text-xs dark:text-white text-gray-600;
     }
 
     strong {
-      @apply text-sm
+      @apply text-sm dark:text-white text-gray-800;
     }
   }
 }
 
 ._btn {
-  @apply px-4 py-2 bg-primary border-2 border-primary rounded-xl text-sm;
+  @apply px-4 py-2 bg-primary border-2 border-primary rounded-xl text-sm text-white;
 
   &._bordered {
-    @apply border-2 border-white bg-transparent hover:border-primary;
+    @apply border-2 text-black border-white bg-transparent hover:border-primary;
   }
 
   &._large {
@@ -90,7 +90,7 @@ a {
     }
 
     span {
-      @apply text-white
+      @apply text-black dark:text-white;
     }
   }
 
@@ -122,7 +122,7 @@ a {
     }
 
     ._links {
-      @apply w-full h-full bg-black px-10 rounded-xl flex items-stretch relative;
+      @apply w-full h-full bg-white dark:bg-black px-10 rounded-xl flex items-stretch relative;
 
       ._content {
         @apply py-10 flex flex-col justify-between w-full;
@@ -131,7 +131,7 @@ a {
           @apply flex flex-col gap-4;
 
           a {
-            @apply text-2xl font-bold hover:text-primary;
+            @apply text-2xl font-bold text-gray-500 dark:text-white hover:text-primary;
           }
         }
 
@@ -139,7 +139,7 @@ a {
           @apply flex flex-col items-center;
 
           hr {
-            @apply border-gray-700 my-8 w-full;
+            @apply border-gray-300 dark:border-gray-700 my-8 w-full;
           }
         }
       }
@@ -151,6 +151,6 @@ a {
   @apply flex items-center gap-6;
 
   a {
-    @apply hover:text-primary text-xl;
+    @apply hover:text-primary dark:text-white text-gray-500 text-xl;
   }
 }

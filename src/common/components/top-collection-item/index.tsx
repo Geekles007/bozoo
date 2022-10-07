@@ -62,8 +62,8 @@ const TopCollectionItem = ({rank}: TopCollectionItemProps) => {
         <div className="secondary--item">
             <Numbers topNumber={"1.78"}/>
         </div>
-        <div className="secondary--item">33,000</div>
-        <div className="secondary--item">340</div>
+        <div className="secondary--item"><Numbers topNumber={"33,000"}/></div>
+        <div className="secondary--item"><Numbers topNumber={"340"}/></div>
     </a>
 
 }

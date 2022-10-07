@@ -1,5 +1,5 @@
 .main--banner {
-  @apply mx-5 mb-12 bg-hover rounded-xl flex place-items-center;
+  @apply mx-5 mb-12 bg-gray-200 dark:bg-hover rounded-xl flex place-items-center mt-4;
   min-height: calc(100vh - 194px);
 
   ._content {
@@ -13,7 +13,7 @@
       }
 
       h2 {
-        @apply text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-medium mb-4 lg:text-left text-center;
+        @apply text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-medium mb-4 lg:text-left text-center dark:text-white text-primary;
       }
 
       ._badges {
@@ -40,7 +40,7 @@
         }
 
         ._naming {
-          @apply flex items-center absolute bottom-0 bg-black left-0 right-0 p-3 gap-2;
+          @apply flex items-center absolute bottom-0 bg-white dark:bg-black left-0 right-0 p-3 gap-2;
 
           span {
             @apply text-sm;
@@ -51,16 +51,6 @@
           }
 
         }
-      }
-    }
-  }
-}
-
-@media (max-width: 1350px) {
-  .main--banner {
-    ._content {
-      ._left {
-
       }
     }
   }

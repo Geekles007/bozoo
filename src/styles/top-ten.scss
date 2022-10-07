@@ -10,7 +10,7 @@
     @apply w-full;
 
     ._head, ._item {
-      @apply flex text-sm text-gray-400 border-b border-b-hover pb-2;
+      @apply flex text-sm text-gray-400 border-b border-b-gray-300 dark:border-b-hover pb-2;
 
       .main--head, .main--item {
         @apply w-80
@@ -26,17 +26,17 @@
     }
 
     ._item {
-      @apply py-2 md:py-4 hover:bg-black flex items-start md:items-center cursor-pointer relative md:h-auto h-24 md:overflow-auto overflow-hidden transition-all duration-500;
+      @apply py-2 md:py-4 hover:bg-gray-200 dark:hover:bg-black flex items-start md:items-center cursor-pointer relative md:h-auto h-24 md:overflow-auto overflow-hidden transition-all duration-500;
 
       &._opened {
         @apply h-44;
       }
 
       ._opener {
-        @apply absolute text-white px-2 text-xs right-4 bg-transparent transition-all duration-500 border-0 top-2 md:hidden block;
+        @apply absolute text-black dark:text-white px-2 text-xs right-4 bg-transparent transition-all duration-500 border-0 top-2 md:hidden block;
 
         &:hover {
-          @apply bg-hover;
+          @apply bg-primary dark:bg-hover text-white;
         }
       }
 
@@ -48,7 +48,7 @@
         @apply px-2 flex md:items-center gap-2;
 
         ._rank {
-          @apply block md:pt-0 pt-3 text-white px-2;
+          @apply block md:pt-0 pt-3 text-black dark:text-white px-2;
         }
 
         ._infos {
@@ -73,7 +73,7 @@
         }
 
         strong {
-          @apply text-white;
+          @apply text-black dark:text-white;
         }
 
         span {

@@ -1,5 +1,5 @@
 .collection--slider {
-  @apply mx-5 pt-8 pl-8 pb-8 bg-hover flex items-center gap-12 mb-12 rounded-xl;
+  @apply mx-5 pt-8 pl-8 pb-8 bg-white dark:bg-hover flex items-center gap-12 mb-12 rounded-xl;
 
   ._left {
     @apply w-full sm:w-72;
@@ -25,18 +25,32 @@
       @apply block absolute top-0 bottom-0 h-full w-10 z-20 bg-hover pointer-events-none;
     }
 
-    &:before {
+    &._light:after {
+      @apply right-0;
+      background: linear-gradient(90deg, rgba(0,212,255,0) 0%, rgba(255,255,255,.5)
+      50%, rgba(255,255,255,1)
+      100%);
+    }
+
+    &._light:before {
       @apply left-0;
-      background: linear-gradient(90deg, rgba(33, 38, 42, 1)
-      0%, rgba(33, 38, 42, .5)
+      background: linear-gradient(90deg, rgba(255,255,255,1)
+      0%, rgba(255,255,255,.5)
       50%, rgba(0,212,255,0) 100%);
     }
 
-    &:after {
+    &._dark:after {
       @apply right-0;
       background: linear-gradient(90deg, rgba(0,212,255,0) 0%, rgba(33, 38, 42, .5)
       50%, rgba(33, 38, 42, 1)
       100%);
+    }
+
+    &._dark:before {
+      @apply left-0;
+      background: linear-gradient(90deg, rgba(33, 38, 42, 1)
+      0%, rgba(33, 38, 42, .5)
+      50%, rgba(0,212,255,0) 100%);
     }
 
     ._slider {
@@ -56,21 +70,21 @@
     }
 
     .collection--item {
-      @apply pl-4 flex flex-col flex-grow flex-1 transition-all duration-500;
+      @apply px-2 flex flex-col flex-grow flex-1 transition-all duration-500;
 
       &:hover {
         @apply -translate-y-2;
       }
 
       a.collec--content {
-        @apply bg-black w-full p-2 flex flex-col gap-3 will-change-transform rounded-xl pb-14;
+        @apply bg-gray-200 dark:bg-black w-full p-2 flex flex-col gap-3 will-change-transform rounded-xl pb-14;
 
         strong {
           @apply mt-2;
         }
 
         p {
-          @apply text-sm text-gray-400;
+          @apply text-sm text-gray-700 dark:text-gray-400;
         }
 
         .collection--cover {

@@ -4,6 +4,7 @@ import CreateCollection from "./controller";
 import Slider from "react-slick";
 import CollectionItem from "../../common/components/collection-item";
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
+import {useTheme} from "next-themes";
 
 type CreateCollectionSliderProps = {}
 
@@ -24,6 +25,7 @@ export function SamplePrevArrow(props: any) {
 const CreateCollectionSlider = ({}: CreateCollectionSliderProps) => {
 
     const {settings, goPrev, goNext} = CreateCollection;
+    const {theme} = useTheme();
     const customSlider: any = React.createRef();
 
     return <div className={"collection--slider"}>
@@ -32,7 +34,7 @@ const CreateCollectionSlider = ({}: CreateCollectionSliderProps) => {
             <span>Powered by <a href="https://ebirly.vercel.app" target={"_blank"} rel="noreferrer">ebirly</a></span>
             <Button type={"large"}>Create a collection</Button>
         </div>
-        <div className="_right">
+        <div className={`_right _${theme}`}>
             <SamplePrevArrow className={"control--left"} onClick={() => goPrev(customSlider)} />
             <Slider {...settings} className={"_slider"} ref={customSlider}>
                 {

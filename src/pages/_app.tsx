@@ -13,7 +13,7 @@ import {ThemeProvider} from "next-themes";
 import './../config';
 
 function MyApp({Component, pageProps}: AppProps) {
-    return <ThemeProvider defaultTheme={"dark"}>
+    return <ThemeProvider enableSystem={true} attribute={'class'}>
         <Layout>
             <Component {...pageProps} />
         </Layout>
