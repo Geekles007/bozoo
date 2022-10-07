@@ -1,20 +1,19 @@
 .main--banner {
   @apply mx-5 mb-12 bg-hover rounded-xl flex place-items-center;
-  height: calc(100vh - 194px);
+  min-height: calc(100vh - 194px);
 
   ._content {
-    max-width: 1440px;
-    @apply p-8 mx-auto flex items-center justify-around;
+    @apply p-8 mx-auto lg:max-w-[1440px] flex-col-reverse lg:flex-row flex items-center justify-around lg:gap-0 gap-8;
 
     ._left {
-      @apply flex flex-col items-start w-2/4;
+      @apply flex flex-col lg:items-start lg:w-2/4 w-3/4 items-center;
 
       ._infos {
         @apply flex gap-6 items-center text-sm mb-4;
       }
 
       h2 {
-        @apply text-9xl font-medium mb-4;
+        @apply text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-medium mb-4 lg:text-left text-center;
       }
 
       ._badges {
@@ -31,8 +30,10 @@
     }
 
     ._right {
+      @apply lg:w-2/4 w-full lg:block flex justify-center items-center;
+
       ._slide {
-        @apply overflow-hidden rounded-xl w-[480px] h-[480px] relative;
+        @apply overflow-hidden rounded-xl lg:w-[480px] lg:h-[480px] relative md:w-96 md:h-96 w-full h-80;
 
         img {
           @apply object-center object-cover;
@@ -50,6 +51,16 @@
           }
 
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .main--banner {
+    ._content {
+      ._left {
+
       }
     }
   }
