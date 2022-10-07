@@ -4,7 +4,7 @@
   ._content {
 
     ._top {
-      @apply flex items-center gap-4 p-5;
+      @apply flex items-center gap-4 p-5 text-xs lg:text-sm;
 
       ._separator {
         @apply h-5 w-0.5 bg-primary;
@@ -12,10 +12,10 @@
     }
 
     ._bottom {
-      @apply flex justify-between items-center h-12 p-5;
+      @apply flex justify-between md:items-center h-12  md:flex-row flex-col p-5;
 
       ._left {
-        @apply flex items-center gap-6;
+        @apply flex items-center gap-6  flex-wrap;
 
         a {
           @apply text-primary hover:underline;
@@ -23,7 +23,7 @@
       }
 
       ._right {
-        @apply flex items-center gap-6;
+        @apply flex items-center gap-6 md:mt-0 mt-8;
 
         a {
           @apply hover:text-primary text-xl;
