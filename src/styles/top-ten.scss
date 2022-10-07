@@ -21,18 +21,63 @@
       }
     }
 
+    ._head {
+      @apply md:flex hidden;
+    }
+
     ._item {
-      @apply py-4 hover:bg-black flex items-center cursor-pointer;
+      @apply py-2 md:py-4 hover:bg-black flex items-start md:items-center cursor-pointer relative md:h-auto h-24 md:overflow-auto overflow-hidden transition-all duration-500;
+
+      &._opened {
+        @apply h-44;
+      }
+
+      ._opener {
+        @apply absolute text-white px-2 text-xs right-4 bg-transparent transition-all duration-500 border-0 top-2 md:hidden block;
+
+        &:hover {
+          @apply bg-hover;
+        }
+      }
 
       .secondary--item {
-        @apply text-white;
+        @apply md:block hidden;
       }
 
       .main--item {
-        @apply px-2 flex items-center gap-2;
+        @apply px-2 flex md:items-center gap-2;
+
+        ._rank {
+          @apply block md:pt-0 pt-3 text-white px-2;
+        }
+
+        ._infos {
+          @apply flex flex-col md:pt-0 pt-3;
+          ._main {
+            @apply flex items-center gap-2 mb-2;
+          }
+          .bottom--main {
+            @apply flex flex-col md:hidden block;
+            .b--item {
+              @apply flex text-xs items-center mb-2;
+
+              .b--head {
+                @apply w-[100px];
+              }
+
+              ._numbers {
+                @apply flex-row gap-8;
+              }
+            }
+          }
+        }
+
+        strong {
+          @apply text-white;
+        }
 
         span {
-          @apply block w-6 text-white;
+          @apply block w-6;
         }
 
         .nft--image {

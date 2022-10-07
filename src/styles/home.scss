@@ -17,7 +17,7 @@
       }
 
       ._badges {
-        @apply flex gap-6 items-center mb-8 flex-wrap items-center;
+        @apply flex gap-6 items-center mb-8 w-full sm:w-auto sm:flex-row flex-col;
 
         ._separator {
           @apply h-14 w-0.5 bg-black hidden sm:block;
@@ -30,7 +30,7 @@
     }
 
     ._right {
-      @apply lg:w-2/4 w-full lg:block flex justify-center items-center;
+      @apply lg:w-2/4 w-full lg:flex flex justify-center items-center;
 
       ._slide {
         @apply overflow-hidden rounded-xl lg:w-[480px] lg:h-[480px] relative md:w-96 md:h-96 w-full h-80;

@@ -42,7 +42,7 @@ const MainBanner = ({}: MainBannerProps) => {
             </div>
             <div className="_right">
                 <div className="_slide">
-                    <Image layout={"fill"} src={"/nft.jpeg"}/>
+                    <Image layout={"fill"} src={"/beauty.jpeg"}/>
                     <Link href={"/"}>
                         <a className="_naming">
                             <span>John Doe NFT</span> <FaCertificate className={"certificate--icon"} />
