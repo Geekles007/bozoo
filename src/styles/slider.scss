@@ -2,10 +2,10 @@
   @apply mx-5 pt-8 pl-8 pb-8 bg-hover flex items-center gap-12 mb-12 rounded-xl;
 
   ._left {
-    @apply w-72;
+    @apply w-full sm:w-72;
 
     h3 {
-      @apply text-4xl mb-6;
+      @apply text-2xl sm:text-4xl mb-6;
     }
 
     span {
@@ -52,14 +52,14 @@
     }
 
     .slick-slider {
-      @apply  py-2.5 px-10 overflow-x-hidden;
+      @apply py-2.5 px-10 overflow-x-hidden;
     }
 
     .collection--item {
       @apply pl-4 flex flex-col flex-grow flex-1 transition-all duration-500;
 
       &:hover {
-        @apply -translate-y-2
+        @apply -translate-y-2;
       }
 
       a.collec--content {
@@ -99,6 +99,20 @@
 
     .control--right {
       @apply right-1.5
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .collection--slider {
+    @apply flex-col pl-0;
+
+    ._left {
+      @apply items-center flex flex-col text-center;
+    }
+    ._right {
+      @apply w-full ml-0;
     }
   }
 }
