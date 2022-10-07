@@ -1,4 +1,4 @@
-import React, {memo} from "react";
+import React, {memo, useEffect, useState} from "react";
 import Link from "next/link";
 import {IHeader} from "../../models/IHeader";
 import dynamic from "next/dynamic";
@@ -6,6 +6,7 @@ import {useTranslation} from "react-i18next";
 import WalletButton from "../wallet-button";
 import ResponsiveSearch from "../responsive-search";
 import Hamburger from "../hamburger";
+import useWindowDimensions from "../../hooks/use-window-dimensions.hook";
 
 const ThemeSwitcher = dynamic(() => import("../theme-switcher"), {ssr: false});
 const LangSwitcher = dynamic(() => import("../lang-switcher"), {ssr: false});
@@ -28,12 +29,25 @@ const HeaderUI = ({}: HeaderUIProps) => {
 
     const {t} = useTranslation("translation", {useSuspense: false});
 
+    const {width} = useWindowDimensions();
+    const [visible, setVisible] = useState<boolean>(true);
+
+    useEffect(() => {
+        if(width < 768) {
+            setVisible(false);
+        } else {
+            setVisible(true)
+        }
+    }, [width])
+
     return <div className={"_header"}>
         <div className={"_left"}>
             <Link href={"/"}>
                 <a className={"_logo"} />
             </Link>
-            <SearchInput />
+            {
+                visible ? <SearchInput /> : null
+            }
             <ResponsiveSearch />
         </div>
 

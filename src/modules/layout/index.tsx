@@ -1,6 +1,6 @@
 import React, {createContext, memo} from "react";
 import dynamic from "next/dynamic";
-import {useDrawer} from "../../common/hooks/use-drawer";
+import {useGlobal} from "../../common/hooks/use-global";
 
 const HeaderUI = dynamic(() => import("../../common/components/header"), {ssr: false});
 const FooterUI = dynamic(() => import("../../common/components/footer"), {ssr: false});
@@ -14,9 +14,9 @@ export const LayoutContext = createContext<any>(null);
 
 const Layout = ({children}: LayoutProps) => {
 
-    const {drawerVisible, changeDrawerState} = useDrawer();
+    const values = useGlobal();
 
-    return <LayoutContext.Provider value={{drawerVisible, changeDrawerState}}>
+    return <LayoutContext.Provider value={values}>
         <HeaderUI />
         <main>{children}</main>
         <FooterUI />
