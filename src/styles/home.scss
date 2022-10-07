@@ -3,10 +3,10 @@
   min-height: calc(100vh - 194px);
 
   ._content {
-    @apply p-8 mx-auto lg:max-w-[1440px] flex-col-reverse lg:flex-row flex items-center justify-around lg:gap-0 gap-8;
+    @apply p-4 lg:p-8 mx-auto lg:max-w-[1440px] flex-col-reverse lg:flex-row flex items-center justify-around lg:gap-0 gap-8;
 
     ._left {
-      @apply flex flex-col lg:items-start lg:w-2/4 w-3/4 items-center;
+      @apply flex flex-col lg:items-start lg:w-2/4 items-center;
 
       ._infos {
         @apply flex gap-6 items-center text-sm mb-4;
@@ -17,15 +17,15 @@
       }
 
       ._badges {
-        @apply flex gap-6 items-center mb-8;
+        @apply flex gap-6 items-center mb-8 flex-wrap items-center;
 
         ._separator {
-          @apply h-14 w-0.5 bg-black;
+          @apply h-14 w-0.5 bg-black hidden sm:block;
         }
       }
 
       ._actions {
-        @apply flex items-center gap-6;
+        @apply flex items-center gap-6 flex-wrap;
       }
     }
 

@@ -34,7 +34,7 @@ a {
 }
 
 ._badge {
-  @apply flex gap-3;
+  @apply flex gap-3 sm:bg-transparent bg-black p-2 rounded-xl w-full;
 
   &:hover {
     ._avatar {
