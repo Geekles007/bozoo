@@ -22,7 +22,7 @@
 
     &:before, &:after {
       content: "";
-      @apply block absolute top-0 bottom-0 h-full w-10 z-40 bg-hover pointer-events-none;
+      @apply block absolute top-0 bottom-0 h-full w-10 z-20 bg-hover pointer-events-none;
     }
 
     &:before {
@@ -52,7 +52,7 @@
     }
 
     .slick-slider {
-      @apply  py-2.5 px-10;
+      @apply  py-2.5 px-10 overflow-x-hidden;
     }
 
     .collection--item {
@@ -63,7 +63,7 @@
       }
 
       a.collec--content {
-        @apply bg-black w-full p-2 flex flex-col gap-3 will-change-transform rounded-xl;
+        @apply bg-black w-full p-2 flex flex-col gap-3 will-change-transform rounded-xl pb-14;
 
         strong {
           @apply mt-2;
@@ -77,6 +77,24 @@
           @apply overflow-hidden rounded-xl
         }
       }
+    }
+
+    &:hover {
+      .control--left, .control--right {
+        @apply opacity-100
+      }
+    }
+
+    .control--left, .control--right {
+      @apply px-2 absolute z-30 -translate-y-2/4 top-2/4 transition-all duration-500 opacity-0;
+    }
+
+    .control--left {
+      @apply left-1.5
+    }
+
+    .control--right {
+      @apply right-1.5
     }
   }
 }
