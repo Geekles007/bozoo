@@ -30,7 +30,7 @@
     }
 
     ._right {
-      @apply lg:w-2/4 w-full lg:flex flex justify-center items-center;
+      @apply lg:w-2/4 w-full lg:flex flex justify-end items-center;
 
       ._slide {
         @apply overflow-hidden rounded-xl lg:w-[480px] lg:h-[480px] relative md:w-96 md:h-96 w-full h-80;
