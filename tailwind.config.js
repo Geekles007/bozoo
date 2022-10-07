@@ -14,7 +14,13 @@ module.exports = {
             hover: "#21262A",
             primary: "#EB4B51"
         },
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'dark-logo': "url('/logo-white.svg')",
+                'light-logo': "url('/logo.svg')",
+                'responsive-logo': "url('/favicon.svg')"
+            }
+        },
     },
     plugins: [],
 }

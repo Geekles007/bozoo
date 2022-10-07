@@ -30,7 +30,7 @@ a {
 }
 
 ._tag {
-  @apply text-sm p-3 bg-black rounded-md;
+  @apply text-sm p-3 bg-black rounded-xl;
 }
 
 ._badge {
@@ -64,7 +64,7 @@ a {
 }
 
 ._btn {
-  @apply px-4 py-2 bg-primary border-2 border-primary rounded-md text-sm;
+  @apply px-4 py-2 bg-primary border-2 border-primary rounded-xl text-sm;
 
   &._bordered {
     @apply border-2 border-white bg-transparent hover:border-primary;
@@ -96,5 +96,61 @@ a {
 
   ._subtract {
     @apply text-xs;
+  }
+}
+
+._drawer {
+  @apply fixed inset-0 backdrop-blur-xl z-50 transition-all duration-500 overflow-hidden flex items-stretch flex-col;
+
+  &._visible {
+    @apply pointer-events-auto opacity-100;
+
+    .drawer--content {
+      @apply translate-x-0 opacity-100;
+    }
+  }
+
+  &._hidden {
+    @apply pointer-events-none opacity-0;
+  }
+
+  .drawer--content {
+    @apply absolute max-w-[408px] w-full inset-y-0 right-0 left-auto p-6 transition-all duration-500 delay-100 translate-x-4 opacity-0;
+
+    ._closer {
+      @apply absolute right-6 top-6 transition-all duration-500 hover:bg-primary rounded-xl p-2;
+    }
+
+    ._links {
+      @apply w-full h-full bg-black px-10 rounded-xl flex items-stretch relative;
+
+      ._content {
+        @apply py-10 flex flex-col justify-between w-full;
+
+        ._top {
+          @apply flex flex-col gap-4;
+
+          a {
+            @apply text-2xl font-bold hover:text-primary;
+          }
+        }
+
+        ._bottom {
+          @apply flex flex-col items-center;
+
+          hr {
+            @apply border-gray-700 my-8 w-full;
+          }
+        }
+      }
+    }
+  }
+}
+
+._socials {
+  @apply flex items-center gap-6;
+
+  a {
+    @apply hover:text-primary text-xl;
   }
 }

@@ -5,6 +5,7 @@
   "contactPageLinkText": "Contactez nous",
   "helpPageLinkText": "Besoin d'aide",
   "brandPageLinkText": "Marque",
+  "createPageLinkText": "Créer",
   "termOfServicePageLinkText": "Termes du service",
   "businessPageLinkText": "Affaire",
   "soonDropText": "Bientôt disponible",
@@ -13,5 +14,6 @@
   "collectionText": "Collection",
   "exploreText": "Explorer",
   "topCollectionsToday": "Classement des collections aujourd'hui",
-  "viewNftText": "Voir NFTs"
+  "viewNftText": "Voir NFTs",
+  "connectWalletText": "Connecter votre portemonnaie"
 }

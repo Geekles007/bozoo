@@ -36,7 +36,7 @@
         }
 
         .nft--image {
-          @apply h-12 w-12 rounded-md overflow-hidden relative;
+          @apply h-12 w-12 rounded-xl overflow-hidden relative;
 
           img {
             @apply object-center object-cover;

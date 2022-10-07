@@ -1,9 +1,9 @@
 .search--input {
-  @apply p-2 bg-hover w-[24rem] rounded-md flex items-center justify-between overflow-hidden relative;
+  @apply p-2 bg-hover w-[24rem] rounded-xl flex items-center justify-between overflow-hidden relative;
 
   &::before {
     content: "";
-    @apply border border-gray-700 absolute inset-0 pointer-events-none rounded-md opacity-0 transition-all duration-300;
+    @apply border border-gray-700 absolute inset-0 pointer-events-none rounded-xl opacity-0 transition-all duration-300;
   }
 
   &:hover {
@@ -23,6 +23,24 @@
   }
 
   ._icon {
-    @apply bg-gray-600 rounded-md p-1 px-2.5 text-xs;
+    @apply bg-gray-600 rounded-xl p-1 px-2.5 text-xs;
+  }
+}
+
+.responsive-search {
+  @apply hidden;
+}
+
+@media (max-width: 820px) {
+  .search--input {
+    @apply hidden;
+  }
+
+  .responsive-search {
+    @apply block;
+
+    .btn--icon {
+      @apply px-2
+    }
   }
 }

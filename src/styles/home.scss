@@ -1,5 +1,5 @@
 .main--banner {
-  @apply mx-5 mb-12 bg-hover rounded-md flex place-items-center;
+  @apply mx-5 mb-12 bg-hover rounded-xl flex place-items-center;
   height: calc(100vh - 194px);
 
   ._content {
@@ -32,7 +32,7 @@
 
     ._right {
       ._slide {
-        @apply overflow-hidden rounded-md w-[480px] h-[480px] relative;
+        @apply overflow-hidden rounded-xl w-[480px] h-[480px] relative;
 
         img {
           @apply object-center object-cover;

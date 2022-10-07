@@ -1,10 +1,11 @@
 {
   "explorePageLinkText": "Explore",
   "collectionsPageLinkText": "Collections",
-  "aboutPageLinkText": "About",
+  "aboutPageLinkText": "About us",
   "contactPageLinkText": "Contact",
   "helpPageLinkText": "Help",
   "brandPageLinkText": "Brand",
+  "createPageLinkText": "Create",
   "termOfServicePageLinkText": "Term of Service",
   "businessPageLinkText": "Business",
   "soonDropText": "Soon drop",
@@ -13,5 +14,6 @@
   "collectionText": "Collection",
   "exploreText": "Explore",
   "topCollectionsToday": "Top Collections Today",
-  "viewNftText": "View NFTs"
+  "viewNftText": "View NFTs",
+  "connectWalletText": "Connect wallet"
 }

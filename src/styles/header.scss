@@ -5,12 +5,16 @@
     @apply flex items-center gap-4;
 
     ._logo {
-      @apply flex items-center;
+      @apply flex items-center lg:bg-light-logo lg:dark:bg-dark-logo bg-responsive-logo lg:h-10 h-8 lg:w-24 w-9 bg-no-repeat bg-contain;
     }
   }
 
   ._right {
     @apply flex items-center gap-1;
+
+    ._links {
+      @apply flex items-center gap-1 hidden sm:block;
+    }
 
     a {
       @apply px-3 py-2 hover:text-white hover:bg-hover transition-all duration-500 relative rounded;
@@ -26,6 +30,10 @@
 
     .wallet-button {
       @apply bg-primary rounded-full p-2 text-white;
+    }
+
+    .drawer--button {
+      @apply block sm:hidden ml-2;
     }
   }
 }
