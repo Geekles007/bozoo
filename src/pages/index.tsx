@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 
 const MainBanner = dynamic(() => import("../modules/main-banner"), {ssr: false});
 const TopTenToday = dynamic(() => import("../modules/top-ten"), {ssr: false});
+const CreateCollectionSlider = dynamic(() => import("../modules/create-collection-slider"), {ssr: false});
 
 const Home: NextPage = () => {
     return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
             <main>
                 <MainBanner/>
                 <TopTenToday/>
+                <CreateCollectionSlider />
             </main>
         </>
     )

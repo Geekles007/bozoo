@@ -1,0 +1,82 @@
+.collection--slider {
+  @apply mx-5 pt-8 pl-8 pb-8 bg-hover flex items-center gap-12 mb-12 rounded-md;
+
+  ._left {
+    @apply w-72;
+
+    h3 {
+      @apply text-4xl mb-6;
+    }
+
+    span {
+      @apply text-gray-400 block mb-6;
+
+      a {
+        @apply text-primary underline;
+      }
+    }
+  }
+
+  ._right {
+    @apply flex-1 overflow-hidden relative;
+
+    &:before, &:after {
+      content: "";
+      @apply block absolute top-0 bottom-0 h-full w-10 z-40 bg-hover pointer-events-none;
+    }
+
+    &:before {
+      @apply left-0;
+      background: linear-gradient(90deg, rgba(33, 38, 42, 1)
+      0%, rgba(33, 38, 42, .5)
+      50%, rgba(0,212,255,0) 100%);
+    }
+
+    &:after {
+      @apply right-0;
+      background: linear-gradient(90deg, rgba(0,212,255,0) 0%, rgba(33, 38, 42, .5)
+      50%, rgba(33, 38, 42, 1)
+      100%);
+    }
+
+    ._slider {
+      @apply py-1.5 overflow-visible;
+    }
+
+    &:first-child {
+      @apply ml-10;
+    }
+
+    .slick-list {
+      @apply overflow-visible
+    }
+
+    .slick-slider {
+      @apply  py-2.5 px-10;
+    }
+
+    .collection--item {
+      @apply pl-4 flex flex-col flex-grow flex-1 transition-all duration-500;
+
+      &:hover {
+        @apply -translate-y-2
+      }
+
+      a.collec--content {
+        @apply bg-black w-full p-2 flex flex-col gap-3 will-change-transform rounded-xl;
+
+        strong {
+          @apply mt-2;
+        }
+
+        p {
+          @apply text-sm text-gray-400;
+        }
+
+        .collection--cover {
+          @apply overflow-hidden rounded-xl
+        }
+      }
+    }
+  }
+}

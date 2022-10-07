@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/react-icons": "^3.0.0",
+    "@types/react-slick": "^0.23.10",
     "i18next": "^21.8.5",
     "i18next-browser-languagedetector": "^6.1.4",
     "i18next-http-backend": "^1.4.1",
@@ -19,7 +20,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-i18next": "^11.16.9",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "18.8.2",

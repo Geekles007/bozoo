@@ -5,7 +5,10 @@ import "../styles/header.scss";
 import "../styles/footer.scss";
 import "../styles/home.scss";
 import "../styles/top-ten.scss";
+import "../styles/slider.scss";
 import "../styles/search-input.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {ThemeProvider} from "next-themes";
 import './../config';
 

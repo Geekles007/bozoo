@@ -24,7 +24,7 @@ const TopTenToday = ({}: TopTenTodayProps) => {
             </div>
             {
                 [1,2,3,4,5,6,7,8,9,10].map((item, index) => {
-                    return <TopCollectionItem rank={index + 1} />
+                    return <TopCollectionItem key={index} rank={index + 1} />
                 })
             }
         </div>
