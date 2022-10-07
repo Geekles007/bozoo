@@ -1,8 +1,10 @@
 import React, {memo, useContext} from "react";
 import Button from "../button";
 import {FaSearch} from "react-icons/all";
-import SearchInput from "../search-input";
 import {LayoutContext} from "../../../modules/layout";
+import dynamic from "next/dynamic";
+
+const SearchInput = dynamic(() => import("../search-input"), {ssr: false});
 
 type ResponsiveSearchProps = {}
 

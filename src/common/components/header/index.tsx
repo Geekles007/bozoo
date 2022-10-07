@@ -4,13 +4,13 @@ import {IHeader} from "../../models/IHeader";
 import dynamic from "next/dynamic";
 import {useTranslation} from "react-i18next";
 import WalletButton from "../wallet-button";
-import ResponsiveSearch from "../responsive-search";
-import Hamburger from "../hamburger";
 import useWindowDimensions from "../../hooks/use-window-dimensions.hook";
 
 const ThemeSwitcher = dynamic(() => import("../theme-switcher"), {ssr: false});
 const LangSwitcher = dynamic(() => import("../lang-switcher"), {ssr: false});
 const SearchInput = dynamic(() => import("../search-input"), {ssr: false});
+const Hamburger = dynamic(() => import("../hamburger"), {ssr: false});
+const ResponsiveSearch = dynamic(() => import("../responsive-search"), {ssr: false});
 
 type HeaderUIProps = {}
 
