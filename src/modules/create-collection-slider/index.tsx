@@ -29,7 +29,7 @@ const CreateCollectionSlider = ({}: CreateCollectionSliderProps) => {
     return <div className={"collection--slider"}>
         <div className="_left">
             <h3>Create NFT marketplace for your community</h3>
-            <span>Powered by <a href="https://ebirly.vercel.app" target={"_blank"}>ebirly</a></span>
+            <span>Powered by <a href="https://ebirly.vercel.app" target={"_blank"} rel="noreferrer">ebirly</a></span>
             <Button type={"large"}>Create a collection</Button>
         </div>
         <div className="_right">

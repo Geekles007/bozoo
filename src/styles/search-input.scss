@@ -1,5 +1,5 @@
 .search--input {
-  @apply p-2 bg-hover w-[24rem] rounded-xl flex items-center justify-between overflow-hidden relative block;
+  @apply p-2 bg-hover w-[24rem] rounded-md flex items-center justify-between overflow-hidden relative block;
 
   &::before {
     content: "";
@@ -23,7 +23,7 @@
   }
 
   ._icon {
-    @apply bg-gray-600 rounded-xl p-1 px-2.5 text-xs;
+    @apply bg-gray-600 rounded-md p-1 px-2.5 text-xs;
   }
 }
 

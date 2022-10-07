@@ -74,7 +74,11 @@
         }
 
         .collection--cover {
-          @apply overflow-hidden rounded-xl
+          @apply relative overflow-hidden rounded-xl w-full h-60;
+
+          img {
+            @apply object-center object-cover w-full h-auto;
+          }
         }
       }
     }
