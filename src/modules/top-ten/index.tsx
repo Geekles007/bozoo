@@ -1,8 +1,5 @@
 import React, {memo} from "react";
 import {useTranslation} from "react-i18next";
-import Image from "next/image";
-import {FaCertificate, FaRegEye} from "react-icons/fa";
-import Numbers from "../../common/components/numbers";
 import TopCollectionItem from "../../common/components/top-collection-item";
 
 type TopTenTodayProps = {}

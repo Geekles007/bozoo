@@ -1,5 +1,5 @@
 import React, {memo, useCallback, useEffect} from "react";
-import {IoEarthOutline} from "react-icons/all";
+import {GiEarthAfricaEurope} from "react-icons/gi";
 import i18n from "i18next";
 
 type LangSwitcherProps = {}
@@ -18,7 +18,7 @@ const LangSwitcher = ({}: LangSwitcherProps) => {
     }, [setLang]);
 
     return <button className={"lang--switcher"} onClick={handleLangChange}>
-        <IoEarthOutline size={22} /> <strong>{lang}</strong>
+        <GiEarthAfricaEurope size={22} /> <strong>{lang}</strong>
     </button>
 
 }

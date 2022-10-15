@@ -1,6 +1,6 @@
 import React, {memo, useContext} from "react";
 import {useTranslation} from "react-i18next";
-import {VscClose} from "react-icons/all";
+import {VscClose} from "react-icons/vsc";
 import {LayoutContext} from "../../../modules/layout";
 
 type SearchInputProps = {

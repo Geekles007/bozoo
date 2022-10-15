@@ -3,7 +3,6 @@ import {IHeader} from "../../models/IHeader";
 import Link from "next/link";
 import {useTranslation} from "react-i18next";
 import dynamic from "next/dynamic";
-import {FaDiscord, FaInstagram, FaTwitter} from "react-icons/all";
 import Socials from "../socials";
 
 const LangSwitcher = dynamic(() => import("./../lang-switcher"), {ssr: false});

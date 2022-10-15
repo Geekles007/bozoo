@@ -15,5 +15,8 @@
   "exploreText": "Explorer",
   "topCollectionsToday": "Classement des collections aujourd'hui",
   "viewNftText": "Voir NFTs",
-  "connectWalletText": "Connecter votre portemonnaie"
+  "connectWalletText": "Connecter votre portemonnaie",
+  "mainBannerMessageText": "Découvrir de nouveaux NFTs",
+  "viewText": "Voir",
+  "createCollectionText": "Créer une collection"
 }

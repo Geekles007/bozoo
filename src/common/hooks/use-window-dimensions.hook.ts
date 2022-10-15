@@ -8,7 +8,7 @@ export interface IDimension {
 
 const useWindowDimensions = () => {
   const [windowDimensions, setWindowDimensions] = useState<IDimension>({
-    width: 0,
+    width: window.innerWidth,
     height: 0,
   });
 

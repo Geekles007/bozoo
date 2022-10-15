@@ -4,7 +4,7 @@ import Badge from "../../common/components/badge";
 import {useTranslation} from "react-i18next";
 import Button from "../../common/components/button";
 import Image from "next/image";
-import {FaCertificate} from "react-icons/all";
+import {FaCertificate} from "react-icons/fa";
 import Link from "next/link";
 
 type MainBannerProps = {}
@@ -19,7 +19,7 @@ const MainBanner = ({}: MainBannerProps) => {
                     <Tag>{t("soonDropText")}</Tag>
                     <span>Jan 6, 2022</span>
                 </div>
-                <h2>Discover New NFTs</h2>
+                <h2>{t("mainBannerMessageText")}</h2>
                 <div className="_badges">
                     <Badge
                         info={{
@@ -37,7 +37,7 @@ const MainBanner = ({}: MainBannerProps) => {
                 </div>
                 <div className="_actions">
                     <Button className={""} type={"large"}>{t("exploreText")}</Button>
-                    <Button className={"_bordered "} type={"large"}>View NFT</Button>
+                    <Button className={"_bordered "} type={"large"}>{t("viewText") + "NFTs"}</Button>
                 </div>
             </div>
             <div className="_right">

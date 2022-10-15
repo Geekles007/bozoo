@@ -1,5 +1,5 @@
 import React, {memo} from "react";
-import {FaEthereum} from "react-icons/all";
+import {FaEthereum} from "react-icons/fa";
 
 type NumbersProps = {
     topNumber: string;

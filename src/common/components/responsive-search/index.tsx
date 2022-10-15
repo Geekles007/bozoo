@@ -1,6 +1,6 @@
 import React, {memo, useContext} from "react";
 import Button from "../button";
-import {FaSearch} from "react-icons/all";
+import {FaSearch} from "react-icons/fa";
 import {LayoutContext} from "../../../modules/layout";
 import dynamic from "next/dynamic";
 

@@ -15,5 +15,8 @@
   "exploreText": "Explore",
   "topCollectionsToday": "Top Collections Today",
   "viewNftText": "View NFTs",
-  "connectWalletText": "Connect wallet"
+  "connectWalletText": "Connect wallet",
+  "mainBannerMessageText": "Discover New NFTs",
+  "viewText": "View",
+  "createCollectionText": "Create a collection"
 }

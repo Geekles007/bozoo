@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+          "type": "command",
+          "name": "Install packages using yarn",
+          "program": "yarn"
+        },
+
+    ]
+}

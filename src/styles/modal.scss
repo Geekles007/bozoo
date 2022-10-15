@@ -1,0 +1,39 @@
+._modal {
+  @apply fixed inset-0 backdrop-blur flex items-center justify-center transition-all duration-500 p-2;
+  z-index: 999;
+
+  ._content {
+    @apply relative bg-hover rounded-lg transition-all duration-500 delay-300 w-full;
+    max-width: 678px;
+    min-height: 100px;
+    min-width: 300px;
+
+    ._head {
+      @apply relative p-6 flex items-center justify-between;
+    }
+
+    ._opener {
+      @apply bg-hover border-0 p-2 transition-all duration-500 absolute top-4 right-4;
+
+      &:hover {
+        @apply bg-primary dark:bg-black text-white;
+      }
+    }
+  }
+
+  &._visible {
+    @apply opacity-100 pointer-events-auto;
+
+    ._content {
+      @apply translate-y-0 opacity-100;
+    }
+  }
+
+  &._hidden {
+    @apply opacity-0 pointer-events-none;
+
+    ._content {
+      @apply translate-y-8 opacity-0;
+    }
+  }
+}

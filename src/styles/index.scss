@@ -1,0 +1,17 @@
+@import "./header.scss";
+@import "./footer.scss";
+@import "./modal.scss";
+@import "./home.scss";
+@import "./top-ten.scss";
+@import "./slider.scss";
+@import "./connect-wallet.scss";
+@import "./search-input.scss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.scroll-button {
+
+  @apply bg-primary fixed flex items-center justify-center p-0.5 text-white bottom-12 right-5 h-8 w-8 border-0;
+
+  z-index: 999;
+}

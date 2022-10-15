@@ -1,5 +1,5 @@
 import React, {memo} from "react";
-import {FaDiscord, FaInstagram, FaTwitter} from "react-icons/all";
+import {FaDiscord, FaInstagram, FaTwitter} from "react-icons/fa";
 
 type SocialsProps = {
     className?: string;
