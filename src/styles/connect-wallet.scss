@@ -1,0 +1,22 @@
+.connect--wallet {
+
+  .wallet--list {
+    @apply flex flex-col gap-2;
+
+    .wallet--item {
+      @apply flex gap-4 p-2 items-center border-none rounded-lg hover:bg-gray-200 hover:dark:bg-hover transition-all duration-500;
+
+      .wallet--logo {
+        @apply w-12 h-12 flex items-center justify-center bg-white rounded-lg;
+
+        img {
+          @apply object-center object-cover rounded-lg;
+        }
+      }
+
+      strong {
+        @apply dark:text-white font-medium;
+      }
+    }
+  }
+}

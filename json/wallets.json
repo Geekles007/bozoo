@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Metamask Wallet",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/800px-MetaMask_Fox.svg.png"
+  },
+  {
+    "id": 2,
+    "title": "Coinbase Wallet",
+    "logo": "https://images.ctfassets.net/c5bd0wqjc7v0/3dFdY6GvgLgCIXmBiN6eiA/d4acc5d4c5d557566cf0e46f9b58de43/icon-buy-and-sell.svg"
+  },
+  {
+    "id": 3,
+    "title": "Wallet Connect",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1sNNEaEfde4BrlS2sNrUOTpBqxajuowicvPy7WAb1QA&s"
+  }
+]

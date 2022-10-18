@@ -1,4 +1,4 @@
-import React, {createRef, memo, useCallback, useContext, useEffect, useRef} from "react";
+import React, {memo, useContext} from "react";
 import {LayoutContext} from "../../../modules/layout";
 import Button from "../button";
 import {VscChromeClose} from "react-icons/vsc";
@@ -14,11 +14,12 @@ const Modal = ({}: ModalProps) => {
     const {modal, changeModalState, connectWalletRef} = useContext(LayoutContext);
 
     const handleOutsideClick = () => {
-        if(modal?.visible) {
+        if (modal?.visible) {
             changeModalState({
                 visible: false,
                 children: null,
-                title: ""
+                title: "",
+                size: "small"
             })
         }
     }
@@ -26,18 +27,21 @@ const Modal = ({}: ModalProps) => {
     useOutsideClick<HTMLDivElement>(connectWalletRef, handleOutsideClick);
 
     return <div className={`_modal ${modal?.visible ? "_visible" : "_hidden"}`}>
-        <div className="_content" ref={connectWalletRef}>
+        <div className={`_content _${modal?.size}`} ref={connectWalletRef}>
             <div className="_head">
                 <span>{modal?.title}</span>
                 <Button type={"medium"} className={"_opener"} onClick={() => changeModalState({
                     visible: false,
                     children: null,
-                    title: null
+                    title: null,
+                    size: "small"
                 })}>
                     <VscChromeClose size={18} color={theme.white}/>
                 </Button>
             </div>
-            {modal?.children}
+            <div className="modal--container">
+                {modal?.children}
+            </div>
         </div>
     </div>
 

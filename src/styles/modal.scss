@@ -3,21 +3,40 @@
   z-index: 999;
 
   ._content {
-    @apply relative bg-hover rounded-lg transition-all duration-500 delay-300 w-full;
+    @apply relative bg-gray-300 dark:bg-black rounded-lg transition-all duration-500 delay-300 ;
     max-width: 678px;
     min-height: 100px;
-    min-width: 300px;
+
+    &._full {
+      @apply w-full;
+    }
+
+    &._large {
+      width: 768px;
+    }
+
+    &._medium {
+      width: 500px;
+    }
+
+    &._small {
+      width: 300px;
+    }
 
     ._head {
       @apply relative p-6 flex items-center justify-between;
     }
 
     ._opener {
-      @apply bg-hover border-0 p-2 transition-all duration-500 absolute top-4 right-4;
+      @apply bg-gray-200 dark:bg-black border-0 p-2 transition-all duration-500 absolute top-4 right-4;
 
       &:hover {
-        @apply bg-primary dark:bg-black text-white;
+        @apply bg-primary dark:bg-hover text-white;
       }
+    }
+
+    .modal--container {
+      @apply p-5 pt-0;
     }
   }
 
