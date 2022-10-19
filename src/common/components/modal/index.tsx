@@ -24,7 +24,7 @@ const Modal = ({}: ModalProps) => {
         }
     }
 
-    useOutsideClick<HTMLDivElement>(connectWalletRef, handleOutsideClick);
+    // useOutsideClick<HTMLDivElement>(connectWalletRef, handleOutsideClick);
 
     return <div className={`_modal ${modal?.visible ? "_visible" : "_hidden"}`}>
         <div className={`_content _${modal?.size}`} ref={connectWalletRef}>

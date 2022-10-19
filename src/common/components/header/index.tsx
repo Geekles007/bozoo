@@ -1,10 +1,9 @@
 import React, {memo, useEffect, useState} from "react";
 import Link from "next/link";
-import {IHeader} from "../../models/IHeader";
 import dynamic from "next/dynamic";
-import {useTranslation} from "react-i18next";
 import WalletButton from "../wallet-button";
 import useWindowDimensions from "../../hooks/use-window-dimensions.hook";
+import HeaderLinks from "../header-links";
 
 const ThemeSwitcher = dynamic(() => import("../theme-switcher"), {ssr: false});
 const LangSwitcher = dynamic(() => import("../lang-switcher"), {ssr: false});
@@ -15,19 +14,6 @@ const ResponsiveSearch = dynamic(() => import("../responsive-search"), {ssr: fal
 type HeaderUIProps = {}
 
 const HeaderUI = ({}: HeaderUIProps) => {
-
-    const headers: Array<IHeader> = [
-        {
-            title: "explorePageLinkText",
-            route: "explore"
-        },
-        {
-            title: "collectionsPageLinkText",
-            route: "collections/0x974f80A5B9570d1bE469A95abc2ee8396DdE60B0"
-        },
-    ];
-
-    const {t} = useTranslation("translation", {useSuspense: false});
 
     const {width} = useWindowDimensions();
     const [visible, setVisible] = useState<boolean>(true);
@@ -52,17 +38,7 @@ const HeaderUI = ({}: HeaderUIProps) => {
         </div>
 
         <div className="_right">
-            <div className="_links">
-                {
-                    headers.map((item, index) => {
-                        return <Link key={index} href={`/${item?.route}`}>
-                            <a>
-                                {t(item?.title)}
-                            </a>
-                        </Link>
-                    })
-                }
-            </div>
+            <HeaderLinks />
             <ThemeSwitcher/>
             <LangSwitcher />
             <WalletButton />

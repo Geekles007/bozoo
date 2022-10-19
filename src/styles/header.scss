@@ -19,8 +19,8 @@
     a {
       @apply px-3 py-2 dark:hover:text-white dark:hover:bg-hover hover:bg-gray-200 transition-all duration-500 relative rounded;
 
-      ._active {
-        @apply bg-hover;
+      &._active {
+        @apply text-primary
       }
     }
 

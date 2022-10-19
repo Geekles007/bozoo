@@ -1,0 +1,20 @@
+.explore--wrapper {
+  @apply p-5;
+
+  ._links {
+    @apply flex items-center gap-2 hidden sm:block mt-8 mb-6;
+  }
+
+  a {
+    @apply text-gray-300 hover:text-primary dark:hover:text-white dark:text-hover transition-all duration-500 relative rounded font-bold text-xl mr-4;
+
+    &._active {
+      @apply dark:text-white text-primary;
+    }
+  }
+
+}
+
+.children--page {
+
+}
