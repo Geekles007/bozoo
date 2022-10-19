@@ -99,8 +99,12 @@ a {
   }
 }
 
+._test {
+  @apply absolute bg-hover inset-0;
+}
+
 ._drawer {
-  @apply fixed inset-0 backdrop-blur-xl z-50 transition-all duration-500 overflow-hidden flex items-stretch flex-col;
+  @apply fixed inset-0 backdrop-blur-xl z-50 transition-all duration-500 flex items-stretch flex-col;
 
   &._visible {
     @apply pointer-events-auto opacity-100;
