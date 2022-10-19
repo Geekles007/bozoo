@@ -1,7 +1,7 @@
 import React, {memo} from "react";
 
 interface ButtonProps extends Pick<React.ButtonHTMLAttributes<HTMLButtonElement>, "className" | "onClick"> {
-    children: JSX.Element[] | string;
+    children: JSX.Element[] | JSX.Element | string;
     type: "large" | "medium" | "small";
 }
 
