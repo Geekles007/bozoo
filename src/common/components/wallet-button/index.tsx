@@ -1,4 +1,4 @@
-import React, {memo, useEffect} from "react";
+import React, {memo} from "react";
 import {ConnectWallet as WalletConnecter, useAddress} from "@thirdweb-dev/react";
 
 type WalletButtonProps = {}
@@ -6,8 +6,8 @@ type WalletButtonProps = {}
 const WalletButton = ({}: WalletButtonProps) => {
     const address = useAddress();
 
-    return <>
-        <WalletConnecter />
+    return <div className={"wallet--trigger"}>
+        <WalletConnecter/>
         {/*<button ref={connectWalletRef} className={"wallet-button"} onClick={() => changeModalState({*/}
         {/*    visible: true,*/}
         {/*    children: <ConnectWallet />,*/}
@@ -16,7 +16,7 @@ const WalletButton = ({}: WalletButtonProps) => {
         {/*})}>*/}
         {/*    <BiWallet size={22}/>*/}
         {/*</button>*/}
-    </>
+    </div>
 
 }
 

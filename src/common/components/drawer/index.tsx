@@ -2,16 +2,17 @@ import React, {memo, useContext} from "react";
 import {IHeader} from "../../models/IHeader";
 import Link from "next/link";
 import {useTranslation} from "react-i18next";
-import Button from "../button";
 import Socials from "../socials";
 import {VscChromeClose} from "react-icons/vsc";
 import {LayoutContext} from "../../../modules/layout";
+import {ConnectWallet as WalletConnecter, useAddress} from "@thirdweb-dev/react";
 
 type DrawerProps = {}
 
 const Drawer = ({}: DrawerProps) => {
 
     const {drawerVisible, changeDrawerState} = useContext(LayoutContext);
+    const address = useAddress();
 
     const {t} = useTranslation("translation", {useSuspense: false});
 
@@ -21,8 +22,8 @@ const Drawer = ({}: DrawerProps) => {
             route: "explore"
         },
         {
-            title: "collectionsPageLinkText",
-            route: "collections"
+            title: "createPageLinkText",
+            route: "create"
         },
         {
             title: "aboutPageLinkText",
@@ -53,7 +54,8 @@ const Drawer = ({}: DrawerProps) => {
                         }
                     </div>
                     <div className="_bottom">
-                        <Button type={"large"} className={"w-full"}>{t("connectWalletText")}</Button>
+
+                        <WalletConnecter />
                         <hr/>
                         <Socials className={"justify-around w-2/4"} />
                     </div>

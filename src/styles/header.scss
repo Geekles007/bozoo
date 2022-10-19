@@ -32,6 +32,10 @@
       @apply bg-primary rounded-full p-2 text-white;
     }
 
+    .wallet--trigger {
+      @apply sm:block hidden;
+    }
+
     .drawer--button {
       @apply block sm:hidden ml-2;
     }
