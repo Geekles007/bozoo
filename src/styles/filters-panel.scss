@@ -1,3 +1,13 @@
 .filters--panel {
-  
+    position: -webkit-sticky;
+    height: calc(100vh - 208px);
+    @apply w-80 py-4 sticky top-24 overflow-y-scroll border-t-gray-300 dark:border-t-black border-t;
+
+    .input--container {
+        @apply mb-3;
+    }
+
+    .amount--filter {
+        @apply mb-6;
+    }
 }

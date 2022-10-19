@@ -2,6 +2,8 @@ import React, {memo} from "react";
 import Head from "next/head";
 import {nestLayout} from "../../../common/helpers";
 import {ExploreLayout} from "../index";
+import FiltersPanel from "../../../modules/filters-panel";
+import NftItem from "../../../common/components/nft-item";
 
 type ItemsPageProps = {
     children: JSX.Element;
@@ -20,7 +22,16 @@ const ItemsPage = () => {
             <link rel="manifest" href="/manifest.json"/>
             <link rel="icon" href="/favicon.svg"/>
         </Head>
-        yo
+        <div className="_page">
+            <FiltersPanel />
+            <div className="_content">
+                {
+                    [1,2,3,4,5,6,7,8,4,5,6].map((item, index) => {
+                        return <NftItem key={index} />;
+                    })
+                }
+            </div>
+        </div>
     </div>
 
 }

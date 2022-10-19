@@ -3,18 +3,30 @@
 
   ._links {
     @apply flex items-center gap-2 hidden sm:block mt-8 mb-6;
-  }
 
-  a {
-    @apply text-gray-300 hover:text-primary dark:hover:text-white dark:text-hover transition-all duration-500 relative rounded font-bold text-xl mr-4;
+    a {
+      @apply text-gray-300 hover:text-primary dark:hover:text-white dark:text-hover transition-all duration-500 relative rounded font-bold text-xl mr-4;
 
-    &._active {
-      @apply dark:text-white text-primary;
+      &._active {
+        @apply dark:text-white text-primary;
+      }
     }
   }
 
 }
 
 .children--page {
+  ._page {
+    -webkit-box-flex: 1;
+    flex-flow: row nowrap;
+    @apply flex gap-4 overflow-visible;
 
+    ._content {
+      @apply flex-1 flex-shrink-0 items-start;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      grid-gap: 1rem;
+      grid-auto-flow: dense;
+    }
+  }
 }

@@ -19,5 +19,7 @@
   "mainBannerMessageText": "Discover New NFTs",
   "viewText": "View",
   "createCollectionText": "Create a collection",
-  "usersText": "Users"
+  "usersText": "Users",
+  "filterByText": "Filter by",
+  "priceText": "price"
 }
